@@ -1,1 +1,15 @@
+.header-inline {
+  display: flex;
+  align-items: center; 
+  gap: 1rem; 
+}
+
+.header-title,
+.header-description {
+  margin: 0; 
+}
+
+.dropdown {
+  display: inline-block; 
+}
 
