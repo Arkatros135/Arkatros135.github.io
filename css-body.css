@@ -1,15 +1,100 @@
+body {
+	background-color: #EEE5CE;
+}
 .header-inline {
   display: flex;
   align-items: center; 
   gap: 1rem; 
+  margin-top: 0px; 
+  padding: ;
+  background-color: rgba(234,152,40,1);
+  border-bottom: .5vw solid black
+  position: fixed;
 }
 
-.header-title,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(232,111,64);
+}
+
+li {
+  float: left;
+}
+
+button, .dropdown-toggle-btn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1.2vw 1.9vw;
+  text-decoration: none;
+  text-decoration: none;
+  border: none;
+  font-size: 1.8rem; 
+  background-color: rgb(252,111,64);
+ 
+}
+
+button:hover, .dropdown-toggle-btn:hover {
+  background-color: red;
+}
+
+button.dropdown-toggle-btn {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f9EF11;
+}
+
+/* Corrected hover selector */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.header-title {
+  font-size: 2.5rem; /* Increased font size for h1 */
+     margin: 0;
+}
+
 .header-description {
-  margin: 0; 
+  font-size: 1.2rem; /* Increase font size of the description */
+  margin-bottom: .5vw;
 }
 
-.dropdown {
-  display: inline-block; 
+.summary{
+	margin-top: 5vw;
+	margin-right:3vw;
+	margin-bottom:2vw;
+	border-top: 2vw;
+/*	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;   */
+	padding: 1.5vw;
+	float: left;
+	
 }
 
+#stitle{
+	margin-top: 0px
+	text-decoration: underline 
+}
