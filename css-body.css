@@ -94,7 +94,7 @@ button.dropdown-toggle-btn {
 	
 }
 
-#stitle{
+. stitle{
 	margin-top: 0px
-	text-decoration: underline 
+	text-decoration: underline black;
 }
