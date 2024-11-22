@@ -8,8 +8,8 @@ body {
   margin-top: 0px; 
   padding: ;
   background-color: rgba(234,152,40,1);
-  border-bottom: .5vw solid black
-  position: fixed;
+  border-bottom: 1px solid black;
+  position: ;
 }
 
 ul {
@@ -81,20 +81,39 @@ button.dropdown-toggle-btn {
   margin-bottom: .5vw;
 }
 
-.summary{
-	margin-top: 5vw;
-	margin-right:3vw;
-	margin-bottom:2vw;
-	border-top: 2vw;
-/*	border-left: 2px solid black;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;   */
-	padding: 1.5vw;
-	float: left;
+
 	
 }
 
-. stitle{
+.stitle{
 	margin-top: 0px
 	text-decoration: underline black;
+}
+
+.container {
+  display: flex;
+  background-color: #f9f9f9f;
+  justify-content: space-between;
+  margin: 2.5vw auto;
+  gap: 2vw;
+}
+
+.summary {
+  flex: 1; 
+  max-width: 42%;
+  padding: 1.5vw;
+  padding-top: .1vw;
+  margin-left: .2vw;
+  background-color: rgba(255, 255, 255,.6); /* Optional: Background color for better visibility */
+  border: 1px solid #ccc; /* Optional: Adds a border */
+}
+
+.TTRPGs {
+  flex: 2; /* Takes up the remaining space */
+  max-width: 58%;
+  padding: 1.5vw;
+  padding-top: .1vw;
+  margin-right: .2vw;
+  background-color: #fff; /* Optional: Background color */
+  border: 1px solid #ccc; /* Optional: Adds a border */
 }
