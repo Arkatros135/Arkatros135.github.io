@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <meta name="author" content="Charles Lavandar">
+    <meta name="description" content="N5E contact page">
+    <meta name="keywords" content="Contact">
+    <link href="css-body.css" type="text/css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDKE21JLW9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-ZDKE21JLW9');
+    </script>
+
+    <style>
+        body, h1, h2, h3 {
+            font-family: "Roboto", "Arial";
+        }
+    </style>
+
+    <script>
+        function confirm_submission(event) {
+            // Prevent default form submission until confirmation
+            event.preventDefault();
+
+            // Ask user for confirmation
+            if (confirm("Are you ready to submit?")) {
+                document.querySelector("form").submit(); // Submit the form if confirmed
+            } else {
+                document.getElementById("demo").innerText = "Submission canceled.";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header-inline">
+        <div class="dropdown">
+            <button class="dropdown-toggle-btn" type="button">≡</button>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#OfficialBooks">Official Books</a></li>
+                    <li><a href="#Homebrew">Homebrew</a></li>
+                    <li><a href="#Links">Links</a></li>
+                    <li><a href="contact_us.html">Contact the Council</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="header-title">N5E</h1>
+        <p class="header-description">- A Naruto Tabletop System, Inspired by D&D 5th edition</p>
+    </header>
+
+    <div class="fillout">
+        <h1>Contact us</h1>
+        <form action="action.html" method="get">
+            <fieldset>
+                <legend><h2 class="profile">Start a profile</h2></legend>
+                <label for="First_name">First name:</label>
+                <input type="text" id="First_name" name="First_name" maxlength="15" required>
+                <label for="Last_name">Last name:</label>
+                <input type="text" id="Last_name" name="Last_name" maxlength="15" required>
+       
+				 <!--  <legend>Let us get back to you</legend> -->
+
+                <p>What is the best way to contact you?</p>
+                <input type="checkbox" name="Ways to contact you" value="Phone"> Phone
+                <input type="checkbox" name="Ways to contact you" value="Email"> Email
+                <input type="checkbox" name="Ways to contact you" value="Socials"> Socials
+                <p>Please provide any relevant information:</p>
+                <label for="Phone">Phone:</label>
+                <input type="text" id="Phone" name="Phone" maxlength="12">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" maxlength="35" required>
+                <label for="prefered_social">Preferred social (if any):</label>
+                <input type="text" id="prefered_social" name="prefered_social" maxlength="35">
+                <label for="Social_info">Social info:</label>
+                <input type="text" id="Social_info" name="Social_info" maxlength="35">
+			<br>
+			</fieldset>
+			<br>
+            <fieldset>
+			<br>
+              <!--  <legend>Finishing it up</legend>  -->
+                <p>What did you want to get in touch about?</p>
+                <textarea name="inquiry" rows="5" cols="40" placeholder="Let us know why you wanted to talk or get in contact" required></textarea>
+                <p>If you wanted to mark any major concerns or request service, please select any applicable options below:</p>
+                <div>
+                    <input type="checkbox" id="Council_Meeting" name="services" value="Council Meeting">
+                    <label for="Council_Meeting">Council Meeting</label>
+                    <input type="checkbox" id="Interview" name="services" value="Interview">
+                    <label for="Interview">Interview</label>
+                    <input type="checkbox" id="Cleanup_Crew" name="services" value="Cleanup Crew">
+                    <label for="Cleanup_Crew">Cleanup Crew for PDF Errors</label>
+                    <input type="checkbox" id="System_Op" name="services" value="System Optimization">
+                    <label for="System_Op">System Optimization and Refining</label>
+                    <input type="checkbox" id="System_concerns" name="services" value="System Concerns">
+                    <label for="System_concerns">System Concerns</label>
+                    <input type="checkbox" id="Homebrew" name="services" value="Homebrew Direct">
+                    <label for="Homebrew">Homebrew Direct</label>
+                </div>
+			</fieldset>
+			
+			<br>
+            <div class="submit_button">
+                <button id="submission" type="submit" onclick="confirm_submission(event)">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

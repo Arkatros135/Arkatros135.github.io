@@ -117,3 +117,17 @@ button.dropdown-toggle-btn {
   background-color: #fff; /* Optional: Background color */
   border: 1px solid #ccc; /* Optional: Adds a border */
 }
+
+#submission {
+	#submission {
+    all: unset; /* Resets all inherited or applied styles */
+    display: inline-block; /* Needed to make the button visible */
+    background-color: initial; /* Removes background styling */
+    color: initial; /* Resets text color */
+    padding: initial; /* Resets padding */
+    font: inherit; /* Ensures it inherits font properties */
+    border: none; /* Removes any borders */
+    cursor: pointer; /* Keeps button-like behavior */
+}
+
+}
