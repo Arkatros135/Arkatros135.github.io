@@ -1,18 +1,24 @@
 body {
 	background-color: #EEE5CE;
+	min-width: 667px;
+	min-height: 290px;
 }
 .header-inline {
   display: flex;
   align-items: center; 
   gap: 1rem; 
+  width:95%;
   margin-top: 0px; 
-  padding: ;
+  margin-left: 0px;
+  margin-right: 20px;
+  padding-right: 20px;
   background-color: rgba(234,152,40,1);
   border-bottom: 1px solid black;
-  position: ;
+  position: fixed ;
+ 
 }
 
-ul {
+.dropdown-menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -20,11 +26,11 @@ ul {
   background-color: rgb(232,111,64);
 }
 
-li {
+.dropdown-menu li {
   float: left;
 }
 
-button, .dropdown-toggle-btn {
+.dropdown-toggle-btn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -37,11 +43,11 @@ button, .dropdown-toggle-btn {
  
 }
 
-button:hover, .dropdown-toggle-btn:hover {
+.dropdown-toggle-btn:hover {
   background-color: red;
 }
 
-button.dropdown-toggle-btn {
+.dropdown-toggle-btn {
   display: inline-block;
 }
 
@@ -63,71 +69,81 @@ button.dropdown-toggle-btn {
 }
 
 .dropdown-menu a:hover {
-  background-color: #f9EF11;
+	background-color: #f9EF11;
 }
 
-/* Corrected hover selector */
 .dropdown:hover .dropdown-menu {
-  display: block;
+	display: block;
 }
 
 .header-title {
-  font-size: 2.5rem; /* Increased font size for h1 */
-     margin: 0;
+	font-size: 2.5rem; 
+	margin: 0;
+	
 }
 
 .header-description {
-  font-size: 1.2rem; /* Increase font size of the description */
-  margin-bottom: .5vw;
+	font-size: 1.2rem; 
+	margin-bottom: .5vw;
+	
 }
 
 
+#deadspace {
+	height: 6vw;
 	
 }
 
 .stitle{
-	margin-top: 0px
-	text-decoration: underline black;
+	margin-top: 0px;
+	background-color: #e8ac4d;
+	padding-left: 0vw;
+	padding-right: 0vw;
+	text-align: center;
+	
 }
 
 .container {
   display: flex;
   background-color: #f9f9f9f;
-  justify-content: space-between;
   margin: 2.5vw auto;
   gap: 2vw;
 }
 
+
+
+.fillbox {
+  margin-left: .2vw;
+  background-color: rgba(255, 255, 255,.7); /* Optional: Background color for better visibility */
+  border: 1px solid #ccc; /* Optional: Adds a border */	
+	
+}
 .summary {
   flex: 1; 
-  max-width: 42%;
+  max-width: 26%;
   padding: 1.5vw;
   padding-top: .1vw;
   margin-left: .2vw;
-  background-color: rgba(255, 255, 255,.6); /* Optional: Background color for better visibility */
+  background-color: rgba(255, 255, 255,.7); /* Optional: Background color for better visibility */
   border: 1px solid #ccc; /* Optional: Adds a border */
 }
 
 .TTRPGs {
   flex: 2; /* Takes up the remaining space */
-  max-width: 58%;
+  max-width: 44%;
   padding: 1.5vw;
   padding-top: .1vw;
   margin-right: .2vw;
-  background-color: #fff; /* Optional: Background color */
+  background-color: rgba(255, 255, 255,.7); /* Optional: Background color */
   border: 1px solid #ccc; /* Optional: Adds a border */
 }
 
-#submission {
-	#submission {
-    all: unset; /* Resets all inherited or applied styles */
-    display: inline-block; /* Needed to make the button visible */
-    background-color: initial; /* Removes background styling */
-    color: initial; /* Resets text color */
-    padding: initial; /* Resets padding */
-    font: inherit; /* Ensures it inherits font properties */
-    border: none; /* Removes any borders */
-    cursor: pointer; /* Keeps button-like behavior */
-}
-
+.cu{
+	margin-top: 0px;
+	margin-bottom: 1vw;
+	margin-left: .2vw;
+	background-color: #e8ac4d;
+	padding-left: 0vw;
+	padding-right: 0vw;
+	text-align: left;
 }
