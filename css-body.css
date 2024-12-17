@@ -3,6 +3,8 @@ body {
 	min-width: 667px;
 	min-height: 290px;
 }
+
+/*header start*/
 .header-inline {
   display: flex;
   align-items: center; 
@@ -17,7 +19,6 @@ body {
   position: fixed ;
  
 }
-
 .dropdown-menu ul {
   list-style-type: none;
   margin: 0;
@@ -25,11 +26,9 @@ body {
   overflow: hidden;
   background-color: rgb(232,111,64);
 }
-
 .dropdown-menu li {
   float: left;
 }
-
 .dropdown-toggle-btn {
   display: inline-block;
   color: white;
@@ -40,17 +39,13 @@ body {
   border: none;
   font-size: 1.8rem; 
   background-color: rgb(252,111,64);
- 
 }
-
 .dropdown-toggle-btn:hover {
   background-color: red;
 }
-
 .dropdown-toggle-btn {
   display: inline-block;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -59,7 +54,6 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-menu a {
   color: black;
   padding: 12px 16px;
@@ -67,33 +61,29 @@ body {
   display: block;
   text-align: left;
 }
-
 .dropdown-menu a:hover {
 	background-color: #f9EF11;
 }
-
 .dropdown:hover .dropdown-menu {
 	display: block;
 }
-
 .header-title {
 	font-size: 2.5rem; 
 	margin: 0;
-	
 }
-
 .header-description {
 	font-size: 1.2rem; 
 	margin-bottom: .5vw;
-	
 }
-
+/* header css */
 
 #deadspace {
-	height: 6vw;
+	height: 5vw;
 	
 }
 
+
+/*index start*/
 .stitle{
 	margin-top: 0px;
 	background-color: #e8ac4d;
@@ -104,23 +94,28 @@ body {
 }
 
 .container {
-  display: flex;
-  background-color: #f9f9f9f;
-  margin: 2.5vw auto;
-  gap: 2vw;
+  display: grid; /* Change to grid layout */
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  grid-template-rows: auto auto; /* Rows adjust height automatically */
+  gap: 1.5vw; /* Spacing between items */
+  width: 100%; /* Container takes 70% of the screen width */
+  margin-left: 0; /* Align container to the left */
+  margin-top: 2vw; /* Add some top margin for spacing */
 }
-
-
 
 .fillbox {
   margin-left: .2vw;
   background-color: rgba(255, 255, 255,.7); /* Optional: Background color for better visibility */
   border: 1px solid #ccc; /* Optional: Adds a border */	
-	
 }
-.summary {
-  flex: 1; 
-  max-width: 26%;
+
+.summary, .TTRPGs, .new-section {
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.summary  {
+  grid-column: 2; /* Fixed in column 2 */
+  grid-row: 1; /* First row */
   padding: 1.5vw;
   padding-top: .1vw;
   margin-left: .2vw;
@@ -129,8 +124,17 @@ body {
 }
 
 .TTRPGs {
-  flex: 2; /* Takes up the remaining space */
-  max-width: 44%;
+  grid-row: span 2; /* Spans two rows */ 
+  grid-column: 1; /* Fixed in column 1 */
+  padding: 1.5vw;
+  padding-top: .1vw;
+  margin-right: .2vw;
+  background-color: rgba(255, 255, 255,.7); /* Optional: Background color */
+  border: 1px solid #ccc; /* Optional: Adds a border */
+}
+.important-names {
+  grid-column: 2; /* Fixed in column 2 */
+  grid-row: 2; /* Second row */
   padding: 1.5vw;
   padding-top: .1vw;
   margin-right: .2vw;
@@ -138,12 +142,43 @@ body {
   border: 1px solid #ccc; /* Optional: Adds a border */
 }
 
+.index-image {
+  grid-column: 3; /* Place in the third column */
+  grid-row: span 2; /* Span across two rows */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  align-items: center; /* Center image vertically */
+}
+
+.index-image img {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* index end */
+
+
 .cu{
 	margin-top: 0px;
-	margin-bottom: 1vw;
+	margin-bottom: .8vw;
 	margin-left: .2vw;
 	background-color: #e8ac4d;
 	padding-left: 0vw;
 	padding-right: 0vw;
 	text-align: left;
+}
+
+.page_title {
+	font-size: 1.2rem; 
+}
+
+.linkbox {
+	padding: 1.5vw;
+  padding-top: .1vw;
+  margin-right: .2vw;
+  background-color: rgba(255, 255, 255,.7); /* Optional: Background color */
+  border: 1px solid #ccc; /* Optional: Adds a border */
+}
+.linkbox li{
+	font-size: 3.5rem;
 }

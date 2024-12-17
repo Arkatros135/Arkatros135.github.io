@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N5E index</title>
+  <meta name="author" content="Charles Lavandar">
+  <meta name="description" content="N5e index page ">
+  <meta name="keywords" content="index">
+  
+  <link href="css-body.css" type="text/css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDKE21JLW9"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-ZDKE21JLW9');
+	</script>
+	<style type="text/css">
+		body,h1,h2,h3 {
+		font-family: "Roboto", "Arial";}
+</style>
+</head>
+
+<body>
+  <div class="header-inline">
+    <div class="dropdown">
+      <button class="dropdown-toggle-btn" type="button">
+        ≡
+      </button>
+      <div class="dropdown-menu">
+        <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#OfficialBooks">Official Books</a></li>
+			<li><a href="#Homebrew">Homebrew</a></li>
+			<li><a href="#Links">Links</a></li>
+			<li><a href="contact_us.html">Contact the Council</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="header-title">N5E</h1>
+    <p class="header-description">- A Naruto Tabletop System, Inspired by D&D 5th edition</p>
+  
+  </div>
+  
+  <div id="deadspace"> </div>
+  
+	<h1 class="class_title"> Official books </h1>
+  <div class="container">
+	
+		<div class="linkbox">
+
+		<h2 class="stitle">Current Books </h2>
+		<div class="fill-box">
+		<ul>
+			<li><a href="https://drive.google.com/file/d/1lSqTKAbzWptSUhov9iHsslxk8H-B3W5b/view?usp=drive_link">Shinobi Hand Book</a></li>
+			<li><a href="https://drive.google.com/file/d/1Q_VwNvOs1ry6Zw9SW9DLqWnbZyNHSZdu/view?usp=drive_link">Orochimaru Observation Compendium</a></li>
+			<li><a href="https://drive.google.com/file/d/19cqLmA1fXgtaVFufdw8iSVVw3vrSlzk-/view?usp=drive_link">Tsunades Studies Compendium</a></li>
+			<li><a href="https://drive.google.com/file/d/1wOsPeLLN85kQ2knL9slxyoZCL6VepR22/view?usp=sharing">Jiraiyas Jutsu Compendium</a></li>
+        </ul>
+		<br>
+		<h2 class="stitle"> Previous versions</h2>
+
+		<ul>
+			<li><a href="https://drive.google.com/drive/folders/1QuHsOu_5CS6HcWx0us10o7KoS8EmEMmf?usp=sharing">Old Naruto 5e Versions: Archive</a></li>
+			
+		</div>
+	</div>	
+	
+	
+	
+	/* optional content*/
+	<div class="linkbox">
+      <h2 class="stitle">Optional Content</h2>
+      <div class="fill-box">
+      <h3>ClassMods </h3>
+		<p> Class Mods are a reasource to help augment and essentually power up characters so that
+		</p>
+		<ul>
+			<li>kingsare4ever - creator or N5E and background manager
+			<li>Absolute A - a big name in the community and appart of the Council
+			<li>Getsu -  Apart of the team staff and homebrew creator
+			<li>Dawntus - Apart of the moderation team
+			<li>PrinceNikko - Appart of the G-sheet team giving players a way to track their information online and much easier
+			<li>Soapy - Apart of the moderation team
+			<li>Optimal- The Creator of the bingobook and homebrew creator
+			<li>Zorat- Apart of the moderation team
+		</ul>
+		<p> Now there are many more names on the list but that is for a different time</p>	
+      </div>
